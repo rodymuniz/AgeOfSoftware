@@ -1,0 +1,525 @@
+.center {
+	max-width: 1366px;
+	margin: auto;
+}
+
+* {
+	margin: 0%;
+	padding: 0%;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Formatação do topo do site (ah, vá! Jura?!)*/
+#topo {
+	width: 100%;
+	height: 400px;
+	box-shadow: 0px 3px 4px #000;
+	background: url(../_Imagens/_Layout/fundo.jpg)no-repeat center center;
+	background-size: cover;
+	margin: 0;
+}
+
+/*Formatação do menu*/
+#menu {
+	max-width: 1366px;
+	width: 100%;
+	height: 50px;
+	background: rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 3px 4px #000;
+	position: fixed;
+	z-index: 1000;
+	transition: background 1s;
+	margin: auto;
+}
+
+/*Comportamento do menu*/
+nav:hover#menu {
+	background: #000;
+}
+
+/*Alinhamento dos links*/
+#alignMenu {
+	width: 30.83333333333333%; /*370/1200*100*/
+	margin: 10px;
+	padding: 10px;
+	float: right;
+	border: solid 1px red;
+}
+
+/*Formatação dos links*/
+a.links {
+	text-decoration: none;
+	font-family: bolt bd bt, arial;
+	color: #ffffff;
+	font-size: 1em;
+	transition: color 1s;
+}
+
+/*Comportamento dos links*/
+a:hover.links {
+	color: #DE5A01;
+}
+
+/*Posicionamento do logotipo*/
+#posLogo {	
+	max-width: 100%;
+	height: 30px;
+	padding: 10px;
+}
+
+/*Alinhamento dos links das redes sociais*/
+#redesSociais {
+	width: 290px;
+	margin: auto;
+	position: relative;
+	top: 280px;
+}
+
+/*Links de acesso às redes sociais*/
+#redesSociais a {
+	width: 60px;
+	height: 60px;
+	border-radius: 90px;
+	background: #009a3d;
+	box-shadow: 0px 3px 4px #000;
+	font-family: bolt bd bt, arial;
+	font-size: 1em;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	line-height: 60px;
+	margin: 6px;
+	padding: 10px;
+	display: inline-block;
+	animation-name: sombra;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	transition: background-color 1s, color 1s;
+}
+
+/*Animação dos links*/
+@keyframes sombra {
+	0% {box-shadow: 0px 3px 4px #000;}
+	25% {box-shadow: 0px 6px 8px #000;}
+	50% {box-shadow: 0px 9px 12px #000;}
+	100% {box-shadow: 0px 3px 4px #000;}
+}
+
+/*Comportamento dos links*/
+#redesSociais a:hover {
+	background: #006633;
+	color: #DE5A01;
+}
+
+/*Formatação de frase da efeito*/
+#topo h1{
+	font-family: bolt bd bt, arial;
+	font-size: 2em;
+	text-align: center;
+	color: #fff;
+
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Nossos serviços*/
+#services {
+	width: 100%;
+	margin: auto;
+	
+}
+
+/*Centraliza serviços*/
+#alignServices {
+	width: 100%;
+	margin: 10px auto;
+}
+
+/*Icones missão, visão e valores*/
+.servicesIcons {
+	width: 130px;
+	height: 130px;
+	padding: 10px;
+	margin: auto;
+}
+
+/*Descrição dos tipos de serviços*/
+.servicesBlock {
+	width: 400px;
+	height: 300px;
+	margin: 10px;
+	padding: 10px;
+	display: inline-block;
+}
+
+.servicesDesc {
+	width: 300px;
+	height: 130px;
+	margin: auto;
+	padding: 10px
+}
+
+.servicesDesc h2{
+	font-family: arial;
+	text-align: center;
+}
+
+.servicesDesc p {
+	font-family: sans-serif, arial;
+	font-size: 1em;
+	text-align: center;
+
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Seção reservada para o slideshow*/
+#slider {
+	width: 100%;
+	height: 500px;
+	background: #333;
+	margin: 0%;
+	padding: 20px 0px 20px;
+}
+
+/*Galeria de fotos*/
+#galery {
+	width: 1000px;
+	height: 500px;
+	border-radius: 20px;
+	box-shadow: 0px 4px 4px #000;
+	display: block;
+	overflow: hidden;
+	margin: auto;
+}
+
+/*Formatação dos botões de controle*/
+#buttons a {
+	width: 60px;
+	height: 60px;
+	border-top-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	background: rgba(0,0,0, 0.7);
+	color: #fff;
+	font-family: bolt bd bt, arial;
+	font-size: 2em;
+	text-align: center;
+	line-height: 50px;
+	display: inline-block;
+	text-decoration: none;
+	transition: color 1s, background-color 1s;
+}
+
+/*Posicionamento dos botões de controle*/
+#buttons {
+	display: none;
+	position: absolute;
+	margin: 10px;
+	z-index: 500;
+}
+
+/*Comportamento dos botões de controle*/
+#buttons a:hover {
+	background: #000;
+	color: #DE5A01;
+}
+
+/*Formatação dos containers dos li's*/
+section#galery ul {
+	list-style: none;
+	display: table;
+	position: relative;
+}
+
+/*Formatação dos containers das img's*/
+section#galery li {
+	width: 1000px;
+	height: 500px;
+	display: inline-block;
+	position: relative;
+}
+
+/*Formatação das img's*/
+section#galery ul  li img {
+	width: 100%;
+	height:100%;
+}
+
+/*legendas*/
+section#galery ul  li figcaption {
+	width: 560px;
+	border-top-right-radius: 8px;
+	background: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	font-family: sans-serif, arial;
+	font-size: 1em;
+	font-weight: 300;
+	margin: 10px;
+	padding: 10px;
+	position: absolute;
+	bottom: 0px;
+	display: table;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#empresa {
+	width: 100%;
+	height: 500px;
+	background: url(../_Imagens/_Membros/equipe.jpg)no-repeat center center fixed;
+	background-size: cover;
+	position: relative;
+}
+
+#infoButton {
+	width: 60px;
+	height: 450px;
+	background: #009a3d;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	box-shadow: 0px 3px 4px #000;
+	cursor: pointer;
+	font-family: bolt bd bt;
+	font-size: 4em;
+	color: #fff;
+	text-align: center;
+	line-height: 380px;
+	transition: background 1s, color 1s;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 500;
+	padding: 10px;
+}
+
+div:hover#infoButton {
+	background: #006633;
+	color: #DE5A01;
+}
+
+#infoBox {
+	width: 60px;
+	height: 450px;
+	background: rgba(0,0,0,0.7);
+	border-radius: 8px;
+	position: absolute;
+	top: 10px;
+	left: 30px;
+	padding: 10px;
+}
+
+#empresaDesc {
+	font-family: sans-serif, arial;
+	font-size: 1em;
+	color: #fff;
+	text-align: justify;
+	margin: 10px;
+	padding: 10px;
+}
+
+#infoBox h1 {
+	font-size: 2em;
+	text-align: center;
+	margin: 10px;
+	display: none;
+}
+
+#infoBox p {
+	text-indent: 50px;
+	margin-left: 40px;
+	max-width: 480px;
+	line-height: 140%;
+	padding: 10px;
+	display: none;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+#mvvTitle {
+	background: #009a3d;
+	font-family: arial;
+	font-size: 2em;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+}
+
+/*Seção reservada para outro slideshow com a nossa missão visão e valores*/
+#missaoVisaoValores {
+	width: 100%;
+	background: #006633;
+	box-shadow: 0px 3px 4px #004b25 inset;
+	margin: 0%;
+	padding: 20px 0px 20px;
+}
+
+/*Container*/
+#mvvContent {
+	width: 1000px;
+	height: 350px;
+	display: block;
+	overflow: hidden;
+	margin: auto;
+	padding: 10px;
+}
+
+/*Posicionamento dos botões de controle*/
+#mvvButtons {
+	margin: 10px;
+	position: absolute;
+	display: none;
+	z-index: 500;
+}
+
+/*Formatação dos botões de controle*/
+#mvvButtons a {
+	width: 60px;
+	height: 60px;
+	border-top-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	background: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	font-family: bolt bd bt, arial;
+	font-size: 2em;
+	text-align: center;
+	line-height: 50px;
+	display: inline-block;
+	text-decoration: none;
+	transition: color 1s, background-color 1s;
+}
+
+/*Comportamento dos botões de controle*/
+#mvvButtons a:hover {
+	background: #000;
+	color: #DE5A01;
+}
+
+/*Formatação dos containers dos li's*/
+section#mvvContent ul {
+	list-style: none;
+	display: table;
+	position: relative;
+}
+
+/*Formatação dos containers dos textos*/
+section#mvvContent li {
+	width: 1000px;
+	height: 500px;
+	display: inline-block;
+	position: relative;
+}
+
+/*Textos*/
+section#mvvContent ul  li p {
+	color: #fff;
+	font-family: sans-serif, arial;
+	font-size: 1.6em;
+	text-align: justfy;
+	line-height: 140%;
+	margin: 10px;
+	padding: 10px;
+	display: table;
+}
+
+/*Títulos*/
+section#mvvContent ul  li h1 {
+	color: #fff;
+	font-family: arial;
+	font-size: 2em;
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Seção reservada aos integrantes do grupo 
+#members {
+	width: 100%;
+	height: 160px;
+}
+
+.memberPhotos {
+	display: inline-block;
+}
+
+.memberPhotos img {
+	box-shadow: 0px 3px 4px #000;
+	border-radius: 100px;
+	margin-left: 10px;
+	transition: 1s;
+	position: relative;
+}
+
+.memberPhotos img:hover {
+	box-shadow: 0px 8px 7px #000;
+	cursor: pointer;
+}
+*/
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#control {
+	width: 100%;
+	height: 100px;
+	padding: 10px 0px 10px;
+}
+
+/*Botão para voltar ao topo do site*/
+#back {
+	width: 60px;
+	height: 60px;
+	background: #009a3d;
+	border-top-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	box-shadow: 0px 3px 4px #000;
+	color: #fff;
+	font-family: bolt bd bt, arial;
+	font-size: 2em;
+	text-align: center;
+	text-decoration: none;
+	line-height: 50px;
+	padding: 10px;
+	margin: 10px;
+	float: right;
+	transition: color 1s, box-shadow 1s;
+}
+
+/*Comportamento do botão*/
+a:hover#back {
+	background: #006633;
+	box-shadow: 0px 9px 12px #000;
+	color: #DE5A01
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*Seção reservada ao rodapé* (não me diga?)*/
+#contato {
+	width: 100%;
+	height: 300px;
+	background: #1a1a1a url(../_Imagens/_Layout/dino.png)no-repeat;
+	background-position: 95.16666666666667% 30px;
+}
+
+#contato p {
+	font-family: sans-serif;
+	color: #fff;
+	text-align: center;
+	margin: 10px;
+}
+
+#contato hr {
+		border: solid 1px #fff;
+		max-width: 180px;
+		margin: auto;
+}
+
+#logo2Alignment {
+	width: 200px;
+	height: 100px;
+	padding: 10px;
+	margin: auto;
+	
+}
